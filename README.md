@@ -8,7 +8,7 @@ FEATURES
 HEADER: Includes a project logo and a welcome message.
 NAVIGATION: Allows users to navigate between different sections of the website.
 MAIN CONTENT: Displays a YouTube video, project description, and post previews.
-FOOTER: Contains copyright information about the project.
+FOOTER: Contains copyright information about the project and the Author.
 
 TEAM MEMBERS
 
