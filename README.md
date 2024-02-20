@@ -1,5 +1,5 @@
 SIMPLE WEBSITE PROJECT
-Welcome to the Simple Website Project, a collaborative effort by Archibald Jarbee, Imtsal Ahmed, and Mohamed A Kemokai to practice Git and GitHub.
+Welcome to the Simple Website Project, a collaborative effort by Archibald Jarbee, Imtsal Ahmad, and Mohamed A Kemokai to practice Git and GitHub.
 
 DESCRIPTION
 This project aims to create a basic website with essential features such as navigation, content display, and styling. It utilizes HTML, CSS, and a linked JavaScript to achieve its functionality.
@@ -17,7 +17,7 @@ Responsible for coding the HTML and linked JavaScript.
 Designed the background image and logo.
 Makes changes and mistakes in the HTML and CSS code.
 
-IMTSAL AHMED:
+IMTSAL AHMAD:
 Handles the CSS in the style.css part of the website.
 Makes changes and mistakes in the HTML and README file.
 
