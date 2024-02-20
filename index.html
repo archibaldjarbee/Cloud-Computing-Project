@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Simple Website</title>
+</head>
+<body>
+  <header>
+    <img src="https://i.ibb.co/NNv1svk/E423-F0-A4-C4-CC-4038-8370-B9-AD5-DEF40-B7.jpg" alt="Project Logo" class="logo">
+    <h1 class="collaborative-project">Welcome to Our Simple Website</h1>
+  </header>
+
+  <main>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">POST</a></li>
+        <li><a href="#">MODULES</a></li>
+        <li><a href="#">NOTES</a></li>
+        <li><a href="#">PAST QUESTIONS</a></li>
+      </ul>
+    </nav>
+    
+    <iframe width="350" height="375" src="https://www.youtube.com/embed/rV1LckwG8wQ" title="Jarbee_Tell Me_(Official_Audio)_FSL Muzik.Ent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+    
+    <p class="project">This is a collaborative project to practice Git and GitHub.</p>
+    
+    <!-- Post previews section -->
+    <section id="postPreviews"></section>
+  </main>
+  
+  <footer>
+    <p>© 2024 University of Management and Technology Simple Website Project</p>
+    <p>© 2024 JarbeeOfficial</p>
+  </footer>
+
+  <!-- JavaScript code -->
+  <script>
+    // Assuming you have an array of post objects with properties like title, description, and URL
+    const posts = [
+      { title: "My Youtube Video", description: "An Official Audio from Feature Sound Leaders Muzik Entertainment Introducing some of our best Artist Jarbee x Kelly Wiz Title : U PADI Artists : JARBEE_KELLY WIZ Straight from : FSLMUZIK. ENT Mixed and mastered : I.T", url: "https://youtu.be/zegnQXMmuWI" },
+      { title: "Facebook Post", description: "Lionel Messi introduced his 8th Ballon d'Or to the Inter Miami fans along with a special badge on his shirt designed by adidas to honour his greatness 🐐 The special badge is based on the Inter Miami crest featuring the iconic letter M with the crane replaced by the goat 🦩 The badge featured on the chest of Messi's shirt ONLY 🩷", url: "https://www.facebook.com/archibaldjarbee/posts/pfbid0jwxMNuhCpKdWVSZarftSjFr5a6Z34ziLyrccGvpAEFNnTKnDnbsvfL93amR8fkuel" },
+      { title: "Facebook Post", description: "Lionel Messi has admitted that even after Kylian Mbappés equaliser in the World Cup final he never doubted that Argentina would win it 😤🏆👇 🗣️ Deep down I was convinced that we were going to be world champions whatever happened. This equaliser was a hard blow but we had already experienced the same scenario against the Netherlands and instead of collapse the team once again played a very good extra time. 📈 🗣️ Of course its terrible to be caught behind the score like that at the end of the match but we knew how to remain calm in relation to this situation" ,url: "https://l.facebook.com/l.php?u=https%3A%2F%2Fwa.me%2F%3Ftext%3Dhttps%253A%252F%252Fwww.facebook.com%252Farchibaldjarbee%252Fposts%252Fpfbid02JyPcxGMHeYQsj6XWhoNdkYHQcXz3xSsZjUwuB1bQJeo5yJ77zeTKvuSAGzsfQpJMl%26fbclid%3DIwAR0mXEXa8PAKsET6D6LybNeoJocK71o614y8j9IYfbPDEU2VAZYDLqK9YvI&h=AT2W-IFm1HeHkslZRhiufNsuqRCbqp4CJ33OvFBfyx_59st5q-H6VItv9Qzdcpt8xF1f2wIUkcUabCUXN70pTclj4FaZhWQ2kLLyeFqqnsRDKQv6y4EANk7cTa1sTyqhud5bpg&__tn__=J]-R&c[0]=AT2GkpNbBqu1ejRiEpKUP-TxiIRJwijt5SJZiL4Pba1Q98CT76DDU4_nGpZUTszRgJTkxLs3KhgJfD-eMLh-dPQcxrAcAdtVwgnmw7lb57urmX6Xr7QOl74P-nuJ3BOtvKwyVHWACqV-3aVCEbuqQcuwxDidHJxiU5ICtB9NKstJ2yWIU4hPdjTKKShKu0i3rOaBuvCxHsnD" },
+      { title: "Facebook Post", description: "Manchester United manager Erik ten Hag has admitted he is not happy” with Marcus Rashford’s form: “I think he’s not happy, we are not happy. 📉", url: "https://l.facebook.com/l.php?u=https%3A%2F%2Fwa.me%2F%3Ftext%3Dhttps%253A%252F%252Fwww.facebook.com%252Farchibaldjarbee%252Fposts%252Fpfbid0X3Y9anrarp385JCeLJCCR8wQK31FWZMtXKjTrQTVgdHGF3H6j1GytAXxsVGZ7mBQl%26fbclid%3DIwAR0mXEXa8PAKsET6D6LybNeoJocK71o614y8j9IYfbPDEU2VAZYDLqK9YvI&h=AT2W-IFm1HeHkslZRhiufNsuqRCbqp4CJ33OvFBfyx_59st5q-H6VItv9Qzdcpt8xF1f2wIUkcUabCUXN70pTclj4FaZhWQ2kLLyeFqqnsRDKQv6y4EANk7cTa1sTyqhud5bpg&__tn__=J]-R&c[0]=AT20bYqq9yyicCgLzL03ewZnf-LFn1X-oTlZuK7ZG9S4K2V8DjPgwHvYRmZB2lFEo6WgwQElAsJjddhhNjEj-gTTidO1NlXANWVqoHxeNXhsx2PefTAs1L3PgLS-rIaIjyDaxGabv0VVunDlnbKi8ltAnMyxrY9sl_4tsiwvuZ_Eqbj8pANhS4iokIyOdbzhDXP_gTGpIkJE" },
+      { title: "Facebook Post", description: "🚨🤕 Tottenham are set to be without James Maddison and Micky van de Ven for lengthy spells.", url: "https://l.facebook.com/l.php?u=https%3A%2F%2Fwa.me%2F%3Ftext%3Dhttps%253A%252F%252Fwww.facebook.com%252Farchibaldjarbee%252Fposts%252Fpfbid02qEWL1LhKUbofCkmnjSHduAaCR713sd53LdsmQRVV1LLCg5jzGiznWsQv4WDbd9ZZl%26fbclid%3DIwAR2AmTaVQsSqpzlBe4Ci3SEob0WnL70XxJ6qPmT-3XLAUSwAOf5jJj1dMqM&h=AT2W-IFm1HeHkslZRhiufNsuqRCbqp4CJ33OvFBfyx_59st5q-H6VItv9Qzdcpt8xF1f2wIUkcUabCUXN70pTclj4FaZhWQ2kLLyeFqqnsRDKQv6y4EANk7cTa1sTyqhud5bpg&__tn__=J]-R&c[0]=AT0AI7Z9OZNsYiO7rVZqlawNhy_5siP3Na0TFoKWpP7Jdr95q54BLOX64ZzGxTj2LVzhO_Kv3pYyanbJwYI8BCG0Vcdu_IRLXkfRKNDk_4gyqlqcycypqzgq5vltNJYEqAisaJuDbyGk2uy_Vm99EnsXB1L_RctgwlRTTGV9_VYVWCXJuGumLkf3c9so2DBwH-Yj8YNkp6SC" },
+      // Add more post objects as needed
+    ];
+    
+    // Function to create post preview elements
+    function createPostPreview(post) {
+      const postPreview = document.createElement('div');
+      postPreview.classList.add('postPreview');
+
+      const title = document.createElement('h2');
+      title.textContent = post.title;
+
+      const description = document.createElement('p');
+      description.textContent = post.description;
+
+      const readMoreLink = document.createElement('a');
+      readMoreLink.textContent = 'Read More';
+      readMoreLink.href = post.url;
+      readMoreLink.target = '_blank'; // Open link in a new tab
+
+      postPreview.appendChild(title);
+      postPreview.appendChild(description);
+      postPreview.appendChild(readMoreLink);
+
+      return postPreview;
+    }
+
+    // Function to display post previews
+function displayPostPreviews() {
+    const postPreviewsSection = document.getElementById('postPreviews');
+
+    // Clear any existing post previews
+    postPreviewsSection.innerHTML = '';
+
+    // Create and append post previews to the section
+    posts.forEach(post => {
+        const postPreview = createPostPreview(post);
+        postPreviewsSection.appendChild(postPreview);
+        postPreviewsSection.appendChild(document.createElement('hr')); // Add a horizontal line between previews
+    });
+}
+
+// Call the function to display post previews
+displayPostPreviews();
+  </script>
+  
+  
+</body>
+</html>
+
