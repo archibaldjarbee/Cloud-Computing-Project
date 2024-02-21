@@ -4,8 +4,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
   <title>Simple Website</title>
+  <style>
+    /* styles/style.css */
+
+/* General styles */
+body {
+    background-image: url('https://i.ibb.co/YLPMjqS/background-unimtech-building.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust this value as needed */
+    left: 10px; /* Adjust this value as needed */
+    width: 50px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation */
+.navigation {
+    position: absolute;
+    top: 80px; /* Adjust this value as needed */
+    left: 1100px; /* Adjust this value as needed */
+}
+
+/* Navigation styles */
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between menu items */
+}
+
+.navigation ul li a {
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 3px 5px; /* Adjust padding to reduce button size */
+    border-radius: 20px; /* Adjust border-radius accordingly */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px; /* Adjust font size to fit smaller buttons */
+}
+
+.navigation ul li a:hover {
+    background-color: lightgray; /* Change background color on hover */
+}
+
+/* Post previews */
+#postPreviews {
+    position: absolute;
+    top: 127px;
+    left: 20px;
+    width: 300px;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border: 5px solid #6b6a6a;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Individual post previews */
+.postPreview {
+    box-shadow: 0 30px 50px rgb(8, 8, 119);
+}
+
+.postPreview h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.postPreview p {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.postPreview a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.postPreview a:hover {
+    transform: scale(0.5);
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  /* CSS */
+.collaborative-project {
+    top: 100%;
+    font-size: 15px; /* Larger font size */
+    color: white; /* Dark gray color */
+    text-align: center; /* Center align text */
+    margin: 1px auto; /* Add some top and bottom margin, center horizontally */
+    padding: 5px; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 80%; /* Limit width to 80% of the container */
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    color: black;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: align right;
+    padding: 20px;
+    font-size: 8px;
+  }
+
+/* Responsive styles */
+@media only screen and (max-width: 900px) {
+    .logo {
+        width: 30px; /* Adjust logo size for smaller screens */
+    }
+    
+    .navigation {
+        top: 100px; /* Adjust navigation position for smaller screens */
+        left: 20px; /* Adjust navigation position for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjustments for screens smaller than 600px */
+    .navigation {
+        top: 35px; /* Adjust navigation position for even smaller screens */
+    }
+    
+    #postPreviews {
+        width: 50%; /* Make post previews full width on smaller screens */
+        left: 0; /* Position post previews at the left edge */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* Adjustments for screens smaller than 400px */
+    header, footer {
+        padding: 1em;
+    }
+}
+</style>
 </head>
 <body>
   <header>
